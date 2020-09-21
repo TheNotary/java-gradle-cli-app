@@ -1,4 +1,4 @@
-package com.example.java;
+package com.example.java.myappgroup;
 
 // This library was installed as a dependency via the pom.xml file
 import org.apache.commons.lang3.StringUtils;
@@ -14,14 +14,16 @@ public class App
         String myString = "";
 
         if ( StringUtils.isEmpty(myString) ) {
-          System.out.println( "It was empty" );
+            System.out.println( "It was empty" );
         }
         else {
-          System.out.println( "It was FULL" );
+           System.out.println( "It was FULL" );
         }
 
         String myProp = System.getProperty("launchtime_property");
 
-        System.out.println( "Hello World!  Here's a property:  " + myProp );
+        Utils utils = new Utils();
+
+        System.out.println( "Hello World!  Here's a property:  " + myProp + " " + utils.performWork() );
     }
 }

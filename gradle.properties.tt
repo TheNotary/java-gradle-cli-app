@@ -1,4 +1,4 @@
-artifact_groupId=com.example.java
+artifact_groupId=com.example.java.myappgroup
 snapshot_suffix=SNAPSHOT
 artifactory_user=anonymous
 artifactory_password=
