@@ -110,7 +110,7 @@ jar {
                    'Implementation-Version': version
     }
     from {
-        configurations.implmenetation.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.implementation.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
 
